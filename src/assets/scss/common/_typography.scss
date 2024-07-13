@@ -110,3 +110,29 @@
   font-weight: 900;
   font-style: italic;
 }
+
+.title {
+    &-45 {
+        @extend .poppins-bold;
+        color: white;
+        font-size: 45px;
+    }
+    &-64 {
+        @extend .poppins-bold;
+        color: white;
+        font-size: 64px;
+    }
+}
+
+.paragraph {
+    &-16 {
+        @extend .poppins-medium;
+        color: map-get($gray, "e1e1e1");
+        font-size: 16px;
+    }
+    &-12 {
+        @extend .poppins-regular;
+        color: map-get($gray, "e1e1e1");
+        font-size: 12px;
+    }
+}

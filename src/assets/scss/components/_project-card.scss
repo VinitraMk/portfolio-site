@@ -1,0 +1,60 @@
+#{$global}-project {
+    height: pxToRem(180);
+    position: relative;
+    
+    &__content {
+        position: relative;
+        width: 60%;
+        z-index: 2;
+    }
+
+    &__title {
+        @extend .poppins-bold;
+        font-size: 18px;
+        color: white;
+        margin: 10px 0;
+    }
+
+    
+
+    &__desc {
+        min-height: pxToRem(80);
+        position: relative;
+        background-color: rgb(88 89 93 / 60%);
+        border-radius: 20px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            filter: blur(10px);
+            -webkit-filter: blur(10px);
+            width: 100%;
+            //background-color: rgb(88 89 93);
+        }
+        &-text {
+            height: 100%;
+            width: 100%;
+            color: white;
+            @extend .poppins-regular;
+            font-size: 12px;
+            padding: 10px;
+        }
+    }
+
+    &__snapshot {
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: "";
+        background: #222;
+        height: 100%;
+        widtH: 45%;
+
+        &:hover {
+            border: 2px solid map-get($gray, "e1e1e1");
+        }
+    }
+}
