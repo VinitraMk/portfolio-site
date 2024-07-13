@@ -117,6 +117,18 @@
     &-iblock {
       display: inline-block;
     }
+    &-flex {
+      display: flex;
+    }
+    &-iflex {
+      display: inline-flex;
+    }
+}
+
+.jc {
+    &-space-around {
+        justify-content: space-around;
+    }
 }
 
 .text {
@@ -129,6 +141,9 @@
     &-capitalize {
         text-transform: capitalize;
     }
+    &-uppercase {
+      text-transform: uppercase;
+    }
 }
 
 .overflow {
@@ -140,14 +155,23 @@
     }
 }
 
-.font-c {
+.fc {
     &-blue {
         color: blue;
+    }
+    &-purple {
+        color: $purple;
     }
 }
 
 .fw {
     &-bold {
         font-weight: bold;
+    }
+}
+
+.cursor {
+    &-pointer {
+        cursor: pointer;
     }
 }

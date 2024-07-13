@@ -1,7 +1,24 @@
 #{$global}-main {
-    background-image: url("/src/assets/images/background-pattern.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: calc(100% - 60px);
     width: 100%;
+    height: calc(100% - 80px);
+    overflow-y: auto;
+
+    &-content {
+        background-image: url("/src/assets/images/background-pattern.png");
+        background-repeat: no-repeat;
+        //background-position: center;
+        width: pxToRem(1024);
+        margin: auto;
+    }
+    
+    &__section {
+        padding: pxToRem(30) pxToRem(10);
+    }
+    &__footer {
+        height: pxToRem(50);
+        padding: pxToRem(20);
+        width: pxToRem(1024);
+        margin: auto;
+        text-align: center;
+    }
 }

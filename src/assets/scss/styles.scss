@@ -8,6 +8,12 @@
 @import './layout/header';
 @import './layout/main';
 
+/* component files */
+@import './components/display-pic';
+@import './components/tag';
+@import './components/job-card';
+@import './components/project-card';
+
 /* vendor files */
 @import '/node_modules/flexboxgrid/css/flexboxgrid.min.css';
 
