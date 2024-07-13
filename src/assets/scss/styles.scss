@@ -1,0 +1,15 @@
+/* common files */
+@import './common/reset';
+@import './common/functions';
+@import './common/variables';
+@import './common/typography';
+
+/* layout files */
+@import './layout/header';
+@import './layout/main';
+
+/* vendor files */
+@import '/node_modules/flexboxgrid/css/flexboxgrid.min.css';
+
+/* common utilities - imported last for effective global usage */
+@import './common/utilities';

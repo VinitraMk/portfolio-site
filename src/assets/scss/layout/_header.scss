@@ -1,0 +1,29 @@
+#{$global}-header {
+    height: pxToRem(60);
+    width: 100%;
+    &__content {
+        //padding: pxToRem(20) pxToRem(105) 0 pxToRem(45);
+        display: flex;
+        justify-content: space-between;
+        width: 56%;
+        margin: auto;
+        padding-top: pxToRem(20);
+    }
+    &__fname {
+        @extend .poppins-bold;
+        font-size: 22px;
+        color: white;
+    }
+    &__lname {
+        @extend .poppins-regular;
+        font-size: 10px;
+        color: white;
+    }
+    &__btn-link {
+        color: map-get($gray, 'e1e1e1');
+        border-radius: 8px;
+        padding: 10px;
+        height: 15px;
+        border: 1px solid map-get($gray, '9a9a9a');
+    }
+}
