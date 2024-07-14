@@ -9,6 +9,10 @@
         width: pxToRem(1024);
         margin: auto;
         padding-top: pxToRem(20);
+        @media screen and (max-width: $mobile-maxw) {
+            width: 100%;
+            padding: pxToRem(20) pxToRem(10);
+        }
     }
     &__fname {
         @extend .poppins-bold;

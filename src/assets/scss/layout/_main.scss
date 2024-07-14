@@ -9,16 +9,25 @@
         //background-position: center;
         width: pxToRem(1024);
         margin: auto;
+
+        @media screen and (max-width: $mobile-maxw) {
+            width: calc(100% - 20px);
+            padding: 0 pxToRem(10);
+        }
     }
     
     &__section {
         padding: pxToRem(30) pxToRem(10);
     }
     &__footer {
-        height: pxToRem(50);
+        min-height: pxToRem(50);
         padding: pxToRem(20);
         width: pxToRem(1024);
         margin: auto;
         text-align: center;
+
+        @media screen and (max-width: $mobile-maxw) {
+            width: calc(100% - 40px);
+        }
     }
 }

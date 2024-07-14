@@ -16,11 +16,13 @@ function App() {
                 <div className="portfolio-main-content">
                     <div id="intro" className="portfolio-main__section">
                         <div className="portfolio-dp"></div>
-                        <h3 className="title-64 text-c">Vinitra Muralikrishnan</h3>
+                        <h3 className="title-64 text-c hidden-sm hidden-md">Vinitra Muralikrishnan</h3>
+                        <h3 className="title-32 text-c hidden-lg">Vinitra Muralikrishnan</h3>
                         <p className="paragraph-16 text-c">A polymath who happens to be a passionate programmer.</p>
                     </div>
                     <div id="about" className="portfolio-main__section">
-                        <h3 className="title-45 text-c text-uppercase">About Me</h3>
+                        <h3 className="title-45 text-c text-uppercase hidden-sm hidden-md">About Me</h3>
+                        <h3 className="title-32 text-c text-uppercase hidden-lg">About Me</h3>
                         <p className="paragraph-16 text-c">
                             As a passionate software engineer, I thrive on the intricate dance between logic and creativity. Currently immersed in the dynamic world
                             of WebHR, my expertise centers around React Native, where I seamlessly blend technology with innovation.
@@ -31,12 +33,14 @@ function App() {
                         </p>
                     </div>
                     <div id="work-experience" className="portfolio-main__section">
-                        <h3 className="title-45 text-c text-uppercase">Work Experience</h3>
+                        <h3 className="title-45 text-c text-uppercase hidden-sm hidden-md">Work Experience</h3>
+                        <h3 className="title-32 text-c text-uppercase hidden-lg">Work Experience</h3>
                         <PortfolioJobCard companyName='Microsoft' position='Front-End Engineer' periodLocation='July 2019 - August 2023, Hyderabad, India'
                             skills={['Typescript', 'Javascript']}></PortfolioJobCard>
                     </div>
                     <div id="projects" className="portfolio-main__section">
-                        <h3 className="title-45 text-c text-uppercase">Projects</h3>
+                        <h3 className="title-45 text-c text-uppercase hidden-sm hidden-md">Projects</h3>
+                        <h3 className="title-32 text-c text-uppercase hidden-lg">Projects</h3>
                         <PortfolioProjectCard/>
                     </div>
                 </div>

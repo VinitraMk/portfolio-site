@@ -1,7 +1,7 @@
 /* common files */
+@import './common/variables';
 @import './common/reset';
 @import './common/functions';
-@import './common/variables';
 @import './common/typography';
 
 /* layout files */
@@ -19,3 +19,4 @@
 
 /* common utilities - imported last for effective global usage */
 @import './common/utilities';
+@import './common/responsive';

@@ -1,0 +1,17 @@
+.hidden {
+    &-sm {
+        @media screen and (max-width: $mobile-maxw) {
+            display: none;
+        }
+    }
+    &-md {
+        @media screen and (min-width: $tab-minw) and (max-width: $tab-maxw) {
+            display: none;
+        }
+    }
+    &-lg {
+        @media screen and (min-width: $desktop-minw) {
+            display: none;
+        }
+    }
+}
