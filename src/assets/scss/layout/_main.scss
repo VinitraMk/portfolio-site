@@ -2,7 +2,8 @@
     width: 100%;
     height: calc(100% - 160px);
     overflow-y: auto;
-    padding: pxToRem(40) 0;
+    padding: pxToRem(120) 0 pxToRem(40) 0;
+    box-sizing: content-box;
 
     &-content {
         background-image: url("/src/assets/images/background-pattern.png");
