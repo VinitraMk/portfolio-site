@@ -45,7 +45,7 @@ function App() {
                         <h3 className="title-45 text-c text-uppercase hidden-sm hidden-md">Projects</h3>
                         <h3 className="title-32 text-c text-uppercase hidden-lg">Projects</h3>
                         <PortfolioProjectCard title='Image Colorization'
-                            description='In this project I try to attemp colorization of grayscale images. This project is a continuation of a course assignment.
+                            description='In this project I attempt to colorize grayscale images. This project is a continuation of a course assignment at UMass, CS689.
                             I begin working with a custom dataset that was provided with the course assignment. After ablation studies performed with unet (with different number of layers) and convolution nets,
                             I am able to achieve a test loss of 0.0952 with the dataset. I am currently building deeper conv-nets for handling grayscaled imagenette images.'
                             snapshotSrc={colorizationProjectSrc} githubRepoUrl={'https://github.com/VinitraMk/Image-Colorization'}/>
