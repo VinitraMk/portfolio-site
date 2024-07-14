@@ -1,7 +1,8 @@
 #{$global}-main {
     width: 100%;
-    height: calc(100% - 80px);
+    height: calc(100% - 120px);
     overflow-y: auto;
+    padding: pxToRem(20) 0;
 
     &-content {
         background-image: url("/src/assets/images/background-pattern.png");
