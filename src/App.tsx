@@ -3,7 +3,7 @@ import logo from './logo.svg';
 //import './App.css';
 import './assets/scss/styles.css';
 import PortfolioHeader
-from './js/atoms/header/header';
+from './js/molecules/header/header';
 import PortfolioJobCard from './js/molecules/job-card/job-card';
 import PortfolioSocialMedia from './js/atoms/icons/social-media';
 import PortfolioProjectCard from './js/molecules/project-card/project-card';
@@ -49,8 +49,8 @@ function App() {
                         <PortfolioSocialMedia type='linkedin' className='m-r-3' link='https://www.linkedin.com/in/vinitramk'/>
                         <PortfolioSocialMedia type='github' link='https://github.com/VinitraMk'/>
                     </div>
-                    <p className="paragraph-12 text-c">Design loosely inspired by <a className='fc-purple' href="https://www.figma.com/design/QEJiULtK3ZgM4aIoNlwnmc/Developer-Portfolio-Design-(Community)?node-id=0-3&t=LqKNhcc29KMcjEsA-0">Figma template</a> and coded in Visual Studio Code by. Built with React, Typescript
-                    and SCSS, deployed with Github Pages. All text is set in the Poppins typeface.</p>
+                    <p className="paragraph-12 text-c">Design loosely inspired by <a className='fc-purple' href="https://www.figma.com/design/QEJiULtK3ZgM4aIoNlwnmc/Developer-Portfolio-Design-(Community)?node-id=0-3&t=LqKNhcc29KMcjEsA-0">Figma template</a> and coded in Visual Studio Code.
+                    Built with React, Typescript and SCSS, deployed with Github Pages. All text is set in the Poppins typeface.</p>
                 </footer>
             </main>
         </>

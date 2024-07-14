@@ -7,9 +7,9 @@
         //padding: pxToRem(20) pxToRem(105) 0 pxToRem(45);
         display: flex;
         justify-content: space-between;
-        width: calc(100% - 20px);
+        width: calc(100% - 40px);
         margin: auto;
-        padding: pxToRem(20) pxToRem(10) 0 pxToRem(10);
+        padding: pxToRem(20) pxToRem(20) 0 pxToRem(20);
 
         @media screen and (max-width: $tab-maxw) {
             width: calc(100% - 40px);
@@ -18,10 +18,9 @@
 
         @media screen and (min-width: $desktop-minw) {
             width: pxToRem(1024);
-            padding-left: 0;
-            padding-right: 0;
         }
     }
+    
     &__fname {
         @extend .poppins-bold;
         font-size: 22px;

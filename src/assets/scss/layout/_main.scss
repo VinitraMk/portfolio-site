@@ -13,17 +13,18 @@
         margin: auto;
 
         @media screen and (max-width: $tab-maxw) {
-            width: calc(100% - 20px);
-            padding: 0 pxToRem(10);
+            width: calc(100% - 40px);
+            padding: 0 pxToRem(20);
         }
 
         @media screen and (min-width: $desktop-minw) {
-            width: pxToRem(1024)
+            width: pxToRem(1024);
+            //padding: 0 pxToRem(20);
         }
     }
     
     &__section {
-        padding: pxToRem(30) pxToRem(10);
+        padding: pxToRem(20) 0;
     }
     &__footer {
         min-height: pxToRem(50);

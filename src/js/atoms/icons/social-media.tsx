@@ -1,12 +1,12 @@
 import React from "react";
 
-interface PorfolioSocialMediaProps {
+interface PortfolioSocialMediaProps {
     type: string;
     className?: string;
     link: string;
 }
 
-export default function PortfolioSocialMedia(props: PorfolioSocialMediaProps) {
+export default function PortfolioSocialMedia(props: PortfolioSocialMediaProps) {
 
     const handleClick = () => {
         window.open(props.link, '_blank')?.focus();
