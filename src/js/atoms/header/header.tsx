@@ -8,7 +8,7 @@ function PortfolioHeader() {
                     <div className="portfolio-header__fname">Vinitra</div>
                     <div className="portfolio-header__lname">Muralikrishnan</div>
                 </div>
-                <div className="d-iflex hidden-sm">
+                <div className="d-iflex hidden-sm hidden-md">
                     <a href="#about" className='portfolio-header__btn-link'>About</a>
                     <a href="#work-experience" className='portfolio-header__btn-link m-l-2'>Work Experience</a>
                     <a href="#projects" className='portfolio-header__btn-link m-l-2'>Projects</a>

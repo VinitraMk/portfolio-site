@@ -7,12 +7,17 @@
         background-image: url("/src/assets/images/background-pattern.png");
         background-repeat: no-repeat;
         //background-position: center;
-        width: pxToRem(1024);
+        //width: pxToRem(1024);
+        width: calc(100% - 20px);
         margin: auto;
 
-        @media screen and (max-width: $mobile-maxw) {
+        @media screen and (max-width: $tab-maxw) {
             width: calc(100% - 20px);
             padding: 0 pxToRem(10);
+        }
+
+        @media screen and (min-width: $desktop-minw) {
+            width: pxToRem(1024)
         }
     }
     
@@ -22,11 +27,11 @@
     &__footer {
         min-height: pxToRem(50);
         padding: pxToRem(20);
-        width: pxToRem(1024);
+        width: pxToRem(1004);
         margin: auto;
         text-align: center;
 
-        @media screen and (max-width: $mobile-maxw) {
+        @media screen and (max-width: $tab-maxw) {
             width: calc(100% - 40px);
         }
     }

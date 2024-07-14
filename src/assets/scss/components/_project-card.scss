@@ -6,7 +6,7 @@
         position: relative;
         width: 60%;
         z-index: 2;
-        @media screen and (max-width: $mobile-maxw) {
+        @media screen and (max-width: $tab-maxw) {
             z-index: 0;
             width: 100%;
         }
@@ -47,7 +47,7 @@
             padding: 10px;
         }
 
-        @media screen and (max-width: $mobile-maxw) {
+        @media screen and (max-width: $tab-maxw) {
             border-radius: 0;
         }
     }
@@ -68,7 +68,7 @@
             border: 2px solid map-get($gray, "e1e1e1");
         }
 
-        @media screen and (max-width: $mobile-maxw) {
+        @media screen and (max-width: $tab-maxw) {
             width: 100%;
             position: relative;
         }

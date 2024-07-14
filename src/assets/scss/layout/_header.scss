@@ -6,12 +6,20 @@
         //padding: pxToRem(20) pxToRem(105) 0 pxToRem(45);
         display: flex;
         justify-content: space-between;
-        width: pxToRem(1024);
+        width: calc(100% - 20px);
         margin: auto;
         padding-top: pxToRem(20);
-        @media screen and (max-width: $mobile-maxw) {
+        padding-left: pxToRem(10);
+        padding-left: pxToRem(10);
+        @media screen and (max-width: $tab-maxw) {
             width: 100%;
             padding: pxToRem(20) pxToRem(10);
+        }
+
+        @media screen and (min-width: $desktop-minw) {
+            width: pxToRem(1024);
+            padding-left: 0;
+            padding-right: 0;
         }
     }
     &__fname {

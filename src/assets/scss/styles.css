@@ -187,14 +187,23 @@ label input[type=file] {
 .portfolio-header__content {
   display: flex;
   justify-content: space-between;
-  width: 73.1428571429rem;
+  width: calc(100% - 20px);
   margin: auto;
   padding-top: 1.4285714286rem;
+  padding-left: 0.7142857143rem;
+  padding-left: 0.7142857143rem;
 }
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 1025px) {
   .portfolio-header__content {
     width: 100%;
     padding: 1.4285714286rem 0.7142857143rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .portfolio-header__content {
+    width: 73.1428571429rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .portfolio-header__fname {
@@ -227,13 +236,18 @@ label input[type=file] {
 .portfolio-main-content {
   background-image: url("/src/assets/images/background-pattern.png");
   background-repeat: no-repeat;
-  width: 73.1428571429rem;
+  width: calc(100% - 20px);
   margin: auto;
 }
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 1025px) {
   .portfolio-main-content {
     width: calc(100% - 20px);
     padding: 0 0.7142857143rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .portfolio-main-content {
+    width: 73.1428571429rem;
   }
 }
 .portfolio-main__section {
@@ -242,11 +256,11 @@ label input[type=file] {
 .portfolio-main__footer {
   min-height: 3.5714285714rem;
   padding: 1.4285714286rem;
-  width: 73.1428571429rem;
+  width: 71.7142857143rem;
   margin: auto;
   text-align: center;
 }
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 1025px) {
   .portfolio-main__footer {
     width: calc(100% - 40px);
   }
@@ -321,7 +335,7 @@ label input[type=file] {
   width: 60%;
   z-index: 2;
 }
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 1025px) {
   .portfolio-project__content {
     z-index: 0;
     width: 100%;
@@ -354,7 +368,7 @@ label input[type=file] {
   font-size: 12px;
   padding: 10px;
 }
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 1025px) {
   .portfolio-project__desc {
     border-radius: 0;
   }
@@ -374,7 +388,7 @@ label input[type=file] {
 .portfolio-project__snapshot:hover {
   border: 2px solid #e1e1e1;
 }
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 1025px) {
   .portfolio-project__snapshot {
     width: 100%;
     position: relative;
@@ -2346,7 +2360,7 @@ label input[type=file] {
     display: none;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1080px) {
   .hidden-lg {
     display: none;
   }
