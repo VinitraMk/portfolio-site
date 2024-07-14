@@ -1,19 +1,19 @@
 #{$global}-header {
     height: pxToRem(80);
+    max-height: pxToRem(80);
     width: 100%;
-    max-width: 100%;
+
     &__content {
         //padding: pxToRem(20) pxToRem(105) 0 pxToRem(45);
         display: flex;
         justify-content: space-between;
         width: calc(100% - 20px);
         margin: auto;
-        padding-top: pxToRem(20);
-        padding-left: pxToRem(10);
-        padding-left: pxToRem(10);
+        padding: pxToRem(20) pxToRem(10) 0 pxToRem(10);
+
         @media screen and (max-width: $tab-maxw) {
-            width: 100%;
-            padding: pxToRem(20) pxToRem(10);
+            width: calc(100% - 40px);
+            padding: pxToRem(20);
         }
 
         @media screen and (min-width: $desktop-minw) {
@@ -26,6 +26,10 @@
         @extend .poppins-bold;
         font-size: 22px;
         color: white;
+
+        @media screen and (max-width: $tab-maxw) {
+            font-size: 18px;
+        }
     }
     &__lname {
         @extend .poppins-regular;
