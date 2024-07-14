@@ -234,9 +234,9 @@ label input[type=file] {
 
 .portfolio-main {
   width: 100%;
-  height: calc(100% - 120px);
+  height: calc(100% - 160px);
   overflow-y: auto;
-  padding: 1.4285714286rem 0;
+  padding: 2.8571428571rem 0;
 }
 .portfolio-main-content {
   background-image: url("/src/assets/images/background-pattern.png");
