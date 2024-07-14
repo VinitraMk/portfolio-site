@@ -1,8 +1,15 @@
-# Getting Started with Create React App
+# Portfolio Site
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+[![Made-with-React](/src/assets/images/made-with-react.svg)](https://react.dev/)
+
+## About the site
+
+This site is made with react and typescript to showcase my portfolio for Research Engineering, ML Engineering and SDE roles.
+Visit the [site](https://vinitramk.github.io/portfolio-site) to take a look.
+
+## Available React Scripts
 
 In the project directory, you can run:
 
