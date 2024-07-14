@@ -26,6 +26,7 @@
         position: relative;
         background-color: rgb(88 89 93 / 60%);
         border-radius: 20px;
+        //border: 1px solid white;
 
         &::before {
             content: '';
@@ -36,6 +37,10 @@
             filter: blur(10px);
             -webkit-filter: blur(10px);
             width: 100%;
+            background: linear-gradient(to right, rgba(128, 0, 128, 0.35), rgba(255, 165, 0, 0.35));
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
             //background-color: rgb(88 89 93);
         }
         &-text {
