@@ -175,3 +175,9 @@
         cursor: pointer;
     }
 }
+
+.flex {
+    &-wrap {
+        flex-wrap: wrap;
+    }
+}
