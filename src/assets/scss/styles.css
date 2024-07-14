@@ -283,20 +283,20 @@ label input[type=file] {
 }
 
 .portfolio-tag {
-  height: 1.4285714286rem;
-  border-radius: 1.4285714286rem;
+  height: 20px;
+  border-radius: 20px;
   background: linear-gradient(to right, purple, orange);
-  margin: 0 0.3571428571rem;
+  margin: 0 5px;
   box-sizing: content-box;
 }
 .portfolio-tag__body {
-  height: 1.0714285714rem;
-  padding: 2px 7px 0.5px 7px;
+  height: 15px;
+  padding: 0px 7px 1px 7px;
   margin: 0px 1px;
   color: white;
   font-size: 10px;
   background: black;
-  border-radius: 1.4285714286rem;
+  border-radius: 20px;
   cursor: pointer;
   display: inline-block;
 }
