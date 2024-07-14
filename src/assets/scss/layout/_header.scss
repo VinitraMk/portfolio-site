@@ -2,6 +2,9 @@
     height: pxToRem(80);
     max-height: pxToRem(80);
     width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
 
     &__content {
         //padding: pxToRem(20) pxToRem(105) 0 pxToRem(45);
