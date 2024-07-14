@@ -46,7 +46,16 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `npm run predeploy`
+
+This script is used to recombile the files and rebuild the build folder to make a production ready package. This will make a build ready to be published to github
+pages configured for this project.
+
+### `npm run deploy`
+
+This script is used to publish the build folder to the github page configured for this project.
+
+## Learn More about React
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
