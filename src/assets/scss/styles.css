@@ -329,7 +329,7 @@ label input[type=file] {
   background-color: #1a1a1a;
   border-radius: 100%;
   margin: auto;
-  background-image: url("/src/assets/images/self.jpg");
+  background-image: url("/src/assets/images/self.jpeg");
   background-size: cover;
 }
 
