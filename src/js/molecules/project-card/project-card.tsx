@@ -20,7 +20,7 @@ export default function PortfolioProjectCard(props: PortfolioProjectCardProps) {
         }
     }
     return (
-        <div className="portfolio-project">
+        <div className="portfolio-project m-b-8">
             <div className="portfolio-project__content">
                 <div className="portfolio-project__title">{props.title}</div>
                 <div className="portfolio-project__desc">

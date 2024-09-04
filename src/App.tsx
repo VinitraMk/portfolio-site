@@ -8,6 +8,7 @@ import PortfolioJobCard from './js/molecules/job-card/job-card';
 import PortfolioSocialMedia from './js/atoms/icons/social-media';
 import PortfolioProjectCard from './js/molecules/project-card/project-card';
 import colorizationProjectSrc from './assets/images/project-snapshots/colorization-project.png';
+import cosProjectSrc from './assets/images/project-snapshots/cos-project.png';
 
 function App() {
     return (
@@ -44,6 +45,16 @@ function App() {
                     <div id="projects" className="portfolio-main__section">
                         <h3 className="title-45 text-c text-uppercase hidden-sm hidden-md">Projects</h3>
                         <h3 className="title-32 text-c text-uppercase hidden-lg">Projects</h3>
+                        <PortfolioProjectCard title="Enhancing Camouflaged Object Segmentation in Limited Data Setting"
+                            description='This project tackles the challenge of detecting camouflaged objects,
+                            which are designed to blend seamlessly with their surroundings,
+                            making them difficult to spot even for humans. These objects, common in nature and military contexts,
+                            present unique detection challenges with significant real-world implications, such as search and rescue,
+                            ecological surveys, and defect detection. Due to the limitations of existing Camouflaged Object Detection
+                            (COD) datasets, the exploration focuses on innovative methods to overcome these challenges and drive future
+                            research in this critical area.'
+                            snapshotSrc={cosProjectSrc}
+                            githubRepoUrl="https://github.com/VinitraMk/UMass-CS670-Project"/>
                         <PortfolioProjectCard title='Image Colorization'
                             description='In this project I attempt to colorize grayscale images. This project is a continuation of a course assignment at UMass, CS689.
                             I begin working with a custom dataset that was provided with the course assignment. After ablation studies performed with unet (with different number of layers) and convolution nets,
