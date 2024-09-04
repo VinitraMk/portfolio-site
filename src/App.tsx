@@ -9,6 +9,7 @@ import PortfolioSocialMedia from './js/atoms/icons/social-media';
 import PortfolioProjectCard from './js/molecules/project-card/project-card';
 import colorizationProjectSrc from './assets/images/project-snapshots/colorization-project.png';
 import cosProjectSrc from './assets/images/project-snapshots/cos-project.png';
+import motionSynthesisProjectSrc from './assets/images/project-snapshots/motion-synthesis-project.gif';
 
 function App() {
     return (
@@ -55,6 +56,15 @@ function App() {
                             research in this critical area.'
                             snapshotSrc={cosProjectSrc}
                             githubRepoUrl="https://github.com/VinitraMk/UMass-CS670-Project"/>
+                        <PortfolioProjectCard title="Exploring Human Motion Synthesis with Latent-Space GANs"
+                            description='This project introduces a novel framework for human motion synthesis conditioned on text
+                            inputs, leveraging Generative Adversarial Networks (GANs) in the latent space. By optimizing for faster
+                            training and inference, it achieves efficient and high-quality results, with experiments on the HumanML3D
+                            benchmark demonstrating an FID of 2.39 and a diversity score of 8.92. The work explores the potential of simpler
+                            architectures, incorporating elements from StyleGAN and VAE models, to enhance performance in low-resource settings.'
+                            snapshotSrc={motionSynthesisProjectSrc}
+                            githubRepoUrl="https://github.com/VinitraMk/UMass-CS674-Project"/>
+
                         <PortfolioProjectCard title='Image Colorization'
                             description='In this project I attempt to colorize grayscale images. This project is a continuation of a course assignment at UMass, CS689.
                             I begin working with a custom dataset that was provided with the course assignment. After ablation studies performed with unet (with different number of layers) and convolution nets,
