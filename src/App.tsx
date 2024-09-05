@@ -10,6 +10,7 @@ import PortfolioProjectCard from './js/molecules/project-card/project-card';
 import colorizationProjectSrc from './assets/images/project-snapshots/colorization-project.png';
 import cosProjectSrc from './assets/images/project-snapshots/cos-project.png';
 import motionSynthesisProjectSrc from './assets/images/project-snapshots/motion-synthesis-project.gif';
+import daapProjectSrc from './assets/images/project-snapshots/daap-project.png';
 
 function App() {
     return (
@@ -64,6 +65,14 @@ function App() {
                             architectures, incorporating elements from StyleGAN and VAE models, to enhance performance in low-resource settings.'
                             snapshotSrc={motionSynthesisProjectSrc}
                             githubRepoUrl="https://github.com/VinitraMk/UMass-CS674-Project"/>
+                        <PortfolioProjectCard title="Defence against Adversarial Patches"
+                            description='This project tackles the challenge of defending deep neural networks against adversarial patches designed
+                            to manipulate model predictions. Various defense techniques were explored using attack patches of different shapes (square, circle, star),
+                            reducing the misclassification error from 67% to 13%. The approach generalizes across different attack types and demonstrates robustness to non-adversarial,
+                            patch-like objects, offering insights into improving model security in real-world applications.'
+                            snapshotSrc={daapProjectSrc}
+                            githubRepoUrl="https://github.com/VinitraMk/682-Project-DAAP"/>
+
 
                         <PortfolioProjectCard title='Image Colorization'
                             description='In this project I attempt to colorize grayscale images. This project is a continuation of a course assignment at UMass, CS689.
