@@ -48,13 +48,11 @@ function App() {
                         <h3 className="title-45 text-c text-uppercase hidden-sm hidden-md">Projects</h3>
                         <h3 className="title-32 text-c text-uppercase hidden-lg">Projects</h3>
                         <PortfolioProjectCard title="Enhancing Camouflaged Object Segmentation in Limited Data Setting"
-                            description='This project tackles the challenge of detecting camouflaged objects,
-                            which are designed to blend seamlessly with their surroundings,
-                            making them difficult to spot even for humans. These objects, common in nature and military contexts,
-                            present unique detection challenges with significant real-world implications, such as search and rescue,
-                            ecological surveys, and defect detection. Due to the limitations of existing Camouflaged Object Detection
-                            (COD) datasets, the exploration focuses on innovative methods to overcome these challenges and drive future
-                            research in this critical area.'
+                            description='This project addresses the challenge of detecting camouflaged objects, which blend so seamlessly with their environment that they are difficult
+                            to detect even by humans. Our proposed solution leverages two distinct data augmentation techniques — style transfer and data synthesis using Stable Diffusion -
+                            to enhance the training dataset and improve the IoU score. Through style transfer, we apply natural textures to existing training images, enriching the dataset,
+                            while Stable Diffusion is employed to generate entirely new, realistic images from text prompts. Our approach outperforms the benchmark Camouflaged Object Detection model,
+                            SINet, and includes a comparative analysis with SAM.'
                             snapshotSrc={cosProjectSrc}
                             githubRepoUrl="https://github.com/VinitraMk/UMass-CS670-Project"/>
                         <PortfolioProjectCard title="Exploring Human Motion Synthesis with Latent-Space GANs"
