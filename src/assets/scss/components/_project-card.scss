@@ -1,6 +1,10 @@
 #{$global}-project {
     height: pxToRem(150);
     position: relative;
+
+    @media screen and (max-width: $tab-maxw) {
+        height: auto;
+    }
     
     &__content {
         position: relative;

@@ -21,9 +21,6 @@ export default function PortfolioProjectCard(props: PortfolioProjectCardProps) {
     }
     return (
         <div className="portfolio-project m-b-8">
-            <div className="portfolio-project__snapshot" onClick={handleSnapshotClick}>
-                <img className="portfolio-project__snapshot-image" src={props.snapshotSrc}/>
-            </div>
             <div className="portfolio-project__content">
                 <div className="portfolio-project__title">{props.title}</div>
                 <div className="portfolio-project__desc">
@@ -31,6 +28,9 @@ export default function PortfolioProjectCard(props: PortfolioProjectCardProps) {
                         {props.description}
                     </div>
                 </div>
+            </div>
+            <div className="portfolio-project__snapshot" onClick={handleSnapshotClick}>
+                <img className="portfolio-project__snapshot-image" src={props.snapshotSrc}/>
             </div>
         </div>
     )

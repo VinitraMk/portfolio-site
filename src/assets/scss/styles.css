@@ -396,6 +396,11 @@ label input[type=file] {
   height: 10.7142857143rem;
   position: relative;
 }
+@media screen and (max-width: 1081px) {
+  .portfolio-project {
+    height: auto;
+  }
+}
 .portfolio-project__content {
   position: relative;
   width: 80%;
