@@ -6,6 +6,7 @@
     top: 0;
     left: 0;
     background-color: black;
+    z-index: 3;
 
     &__content {
         //padding: pxToRem(20) pxToRem(105) 0 pxToRem(45);

@@ -188,6 +188,7 @@ label input[type=file] {
   top: 0;
   left: 0;
   background-color: black;
+  z-index: 3;
 }
 .portfolio-header__content {
   display: flex;
@@ -392,11 +393,12 @@ label input[type=file] {
 }
 
 .portfolio-project {
+  height: 10.7142857143rem;
   position: relative;
 }
 .portfolio-project__content {
   position: relative;
-  width: 60%;
+  width: 80%;
   z-index: 2;
 }
 @media screen and (max-width: 1081px) {
@@ -456,8 +458,18 @@ label input[type=file] {
   width: 100%;
   object-fit: scale-down;
 }
+@media screen and (min-width: 1080px) {
+  .portfolio-project__snapshot-image {
+    object-fit: fill;
+  }
+}
 .portfolio-project__snapshot:hover {
   border: 2px solid #e1e1e1;
+}
+@media screen and (min-width: 1080px) {
+  .portfolio-project__snapshot {
+    width: 17.8571428571rem;
+  }
 }
 @media screen and (max-width: 1081px) {
   .portfolio-project__snapshot {
