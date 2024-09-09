@@ -40,7 +40,7 @@ function App() {
                         <h3 className="title-45 text-c text-uppercase hidden-sm hidden-md">Research Interests</h3>
                         <h3 className="title-32 text-c text-uppercase hidden-lg">Research Interests</h3>
                         <p className="paragraph-16 text-c">
-                            My primary research interest lies in Machine Learning, specifically in self-upervised or weakly-supervised learning methods and their applications in various problems.
+                            My primary research interest lies in Machine Learning, specifically in self-supervised or weakly-supervised learning methods and their applications in various problems.
                             I am currently tackling computer vision and graphics problems, with the goal of devising methods to solve machine learning tasks in low data setting. Some of my most recent work
                             deal with fine-grained classification, object detection and segmentation and human motion synthesis. I plan to explore problems related to audio synthesis and recommendation systems.
                         </p>
