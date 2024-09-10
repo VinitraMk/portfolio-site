@@ -35,6 +35,7 @@ export default function PortfolioProjectCard(props: PortfolioProjectCardProps) {
             </div>
             <div className="portfolio-project__snapshot">
                 <img className="portfolio-project__snapshot-image" src={props.snapshotSrc}/>
+                {/*<div className="portfolio-project__snapshot-overlay"></div>->*/}
             </div>
         </div>
     )

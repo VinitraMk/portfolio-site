@@ -497,6 +497,15 @@ label input[type=file] {
     position: relative;
   }
 }
+.portfolio-project__snapshot-overlay {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(88, 89, 93, 0.6);
+  height: 21.4285714286rem;
+  width: 28.5714285714rem;
+  z-index: 3;
+}
 
 .portfolio-btn-transparent {
   background-color: transparent;
