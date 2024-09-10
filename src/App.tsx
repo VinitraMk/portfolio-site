@@ -36,7 +36,7 @@ function App() {
                             lives easier while experimenting with the latest technologies
                         </p>
                     </div>
-                     <div id="about" className="portfolio-main__section">
+                     <div id="research-interests" className="portfolio-main__section">
                         <h3 className="title-45 text-c text-uppercase hidden-sm hidden-md">Research Interests</h3>
                         <h3 className="title-32 text-c text-uppercase hidden-lg">Research Interests</h3>
                         <p className="paragraph-16 text-c">

@@ -18,6 +18,7 @@ export default function PortfolioNavbar({ display = false, onClose = () => {} } 
             <div className="portfolio-navoverlay__content">
                 <ul>
                     <li><a href="#about" onClick={onClose}>About</a></li>
+                    <li><a href="#research-interests" onClick={onClose}>Research Interests</a></li>
                     <li><a href="#work-experience" onClick={onClose}>Work Experience</a></li>
                     <li><a href="#projects" onClick={onClose}>Projects</a></li>
                 </ul>

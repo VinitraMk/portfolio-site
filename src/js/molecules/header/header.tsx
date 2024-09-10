@@ -19,6 +19,7 @@ function PortfolioHeader() {
                 </div>
                 <div className="d-iflex hidden-sm hidden-md">
                     <a href="#about" className='portfolio-header__btn-link'>About</a>
+                    <a href="#research-interests" className='portfolio-header__btn-link m-l-2'>Research Interests</a>
                     <a href="#work-experience" className='portfolio-header__btn-link m-l-2'>Work Experience</a>
                     <a href="#projects" className='portfolio-header__btn-link m-l-2'>Projects</a>
                 </div>
