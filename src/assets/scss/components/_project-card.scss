@@ -4,6 +4,7 @@
 
     @media screen and (max-width: $tab-maxw) {
         height: auto;
+        max-height: none;
     }
     
     &__content {

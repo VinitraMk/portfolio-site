@@ -413,6 +413,7 @@ label input[type=file] {
 @media screen and (max-width: 1081px) {
   .portfolio-project {
     height: auto;
+    max-height: none;
   }
 }
 .portfolio-project__content {
