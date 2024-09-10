@@ -1,4 +1,5 @@
 import React from "react";
+import PortfolioTag from "../../atoms/tag/tag";
 
 interface PortfolioProjectCardProps {
     title: string;
@@ -27,9 +28,12 @@ export default function PortfolioProjectCard(props: PortfolioProjectCardProps) {
                     <div className="portfolio-project__desc-text">
                         {props.description}
                     </div>
+                    <div className="d-flex p-x-3 p-b-3">
+                        <PortfolioTag type="project" title="Github Repo" onClick={handleSnapshotClick}/>
+                    </div>
                 </div>
             </div>
-            <div className="portfolio-project__snapshot" onClick={handleSnapshotClick}>
+            <div className="portfolio-project__snapshot">
                 <img className="portfolio-project__snapshot-image" src={props.snapshotSrc}/>
             </div>
         </div>

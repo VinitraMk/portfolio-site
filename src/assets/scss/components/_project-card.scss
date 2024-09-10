@@ -1,5 +1,5 @@
 #{$global}-project {
-    height: pxToRem(150);
+    max-height: pxToRem(210);
     position: relative;
 
     @media screen and (max-width: $tab-maxw) {

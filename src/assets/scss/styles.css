@@ -67,7 +67,7 @@ label input[type=file] {
   font-style: normal;
 }
 
-.poppins-regular, .portfolio-project__desc-text, .portfolio-job__period, .portfolio-job__title, .portfolio-tag__body, .portfolio-header__lname, .paragraph-12 {
+.poppins-regular, .portfolio-project__desc-text, .portfolio-job__period, .portfolio-job__title, .portfolio-tag-def__body, .portfolio-header__lname, .paragraph-12 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -334,14 +334,28 @@ label input[type=file] {
   background-size: cover;
 }
 
-.portfolio-tag {
+.portfolio-tag-project {
+  height: 15px;
+  padding: 5px;
+  border: 1px solid #e1e1e1;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #e1e1e1;
+  cursor: pointer;
+  z-index: 2;
+}
+.portfolio-tag-project:hover {
+  background-color: #e1e1e1;
+  color: black;
+}
+.portfolio-tag-def {
   height: 20px;
   border-radius: 20px;
   background: linear-gradient(to right, purple, orange);
   margin: 2px 5px;
   box-sizing: content-box;
 }
-.portfolio-tag__body {
+.portfolio-tag-def__body {
   height: 15px;
   padding: 0px 7px 1px 7px;
   margin: 0px 1px;
@@ -393,7 +407,7 @@ label input[type=file] {
 }
 
 .portfolio-project {
-  height: 10.7142857143rem;
+  max-height: 15rem;
   position: relative;
 }
 @media screen and (max-width: 1081px) {

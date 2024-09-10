@@ -1,21 +1,41 @@
 #{$global}-tag {
-    height: 20px;
-    border-radius: 20px;
-    background: linear-gradient(to right, purple, orange);
-    margin: 2px 5px;
-    box-sizing: content-box;
 
-    &__body {
+    &-project {
         height: 15px;
-        padding: 0px 7px 1px 7px;
-        margin: 0px 1px;
-        color: white;
-        font-size: 10px;
-        @extend .poppins-regular;
-        background: black;
-        border-radius: 20px;
-        //display: inline-block;
+        padding: 5px;
+        border: 1px solid map-get($gray, "e1e1e1");
+        font-size: 12px;
+        text-transform: uppercase;
+        color: map-get($gray, "e1e1e1");
         cursor: pointer;
-        display: inline-block;
+        z-index: 2;
+
+        &:hover {
+            background-color: map-get($gray, "e1e1e1");
+            color: black;
+        }
     }
+
+    &-def {
+        height: 20px;
+        border-radius: 20px;
+        background: linear-gradient(to right, purple, orange);
+        margin: 2px 5px;
+        box-sizing: content-box;
+
+        &__body {
+            height: 15px;
+            padding: 0px 7px 1px 7px;
+            margin: 0px 1px;
+            color: white;
+            font-size: 10px;
+            @extend .poppins-regular;
+            background: black;
+            border-radius: 20px;
+            //display: inline-block;
+            cursor: pointer;
+            display: inline-block;
+        }
+    }
+    
 }
