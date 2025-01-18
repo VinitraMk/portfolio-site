@@ -80,11 +80,13 @@ function App() {
                             patch-like objects, offering insights into improving model security in real-world applications.'
                             snapshotSrc={daapProjectSrc}
                             githubRepoUrl="https://github.com/VinitraMk/682-Project-DAAP"/>
+                        {/* 
                         <PortfolioProjectCard title='Image Colorization'
                             description='In this project I attempt to colorize grayscale images. This project is a continuation of a course assignment at UMass, CS689.
                             I begin working with a custom dataset that was provided with the course assignment. After ablation studies performed with unet (with different number of layers) and convolution nets,
                             I am able to achieve a test loss of 0.0952 with the dataset. I am currently building deeper conv-nets for handling grayscaled imagenette images.'
                             snapshotSrc={colorizationProjectSrc} githubRepoUrl={'https://github.com/VinitraMk/Image-Colorization'}/>
+                        */}
                     </div>
                 </div>
                 <footer className="portfolio-main__footer">
