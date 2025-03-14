@@ -22,18 +22,18 @@ function App() {
                         <div className="portfolio-dp"></div>
                         <h3 className="title-64 text-c hidden-sm hidden-md m-b-0">Vinitra Muralikrishnan</h3>
                         <h3 className="title-32 text-c hidden-lg">Vinitra Muralikrishnan</h3>
-                        <p className="paragraph-16 text-c">A polymath who loves solving problems and happens to be a passionate programmer.</p>
+                        <p className="paragraph-16 text-c">A polymath who loves solving problems and happens to be a passionate and excellent programmer.</p>
                     </div>
                     <div id="about" className="portfolio-main__section">
                         <h3 className="title-45 text-c text-uppercase hidden-sm hidden-md">About Me</h3>
                         <h3 className="title-32 text-c text-uppercase hidden-lg">About Me</h3>
                         <p className="paragraph-16 text-c">
-                            As a polymath, I am passionate about a broad spectrum of subjects, with coding being one of my greatest interests.
-                            My love for learning drives me to constantly explore new areas, ranging from science and technology to art and philosophy.
+                            As a polymath, I am passionate about a broad spectrum of subjects and disciplines, with computer science being one of them.
+                            My curiosity and drive for learning drives me to constantly explore new areas, ranging from science and technology to art and philosophy.
                         </p>
                         <p className="paragraph-16 text-c">
-                            Writing code holds a special place in my heart, and I find immense joy in crafting innovative solutions to make my life and others'
-                            lives easier while experimenting with the latest technologies
+                            I find immense fulfillment in crafting innovative solutions that enhance everyday life while also experimenting with emerging technologies
+                            to expand my understanding.
                         </p>
                     </div>
                      <div id="research-interests" className="portfolio-main__section">
@@ -44,6 +44,19 @@ function App() {
                             I am currently tackling computer vision problems, with the goal of devising methods to solve machine learning tasks in low data setting. Some of my most recent work
                             deal with fine-grained classification, object detection and segmentation and human motion synthesis. I plan to explore problems related to audio synthesis and recommendation systems.
                         </p>
+                    </div>
+
+                    <div id="research-experience" className="portfolio-main__section">
+                        <h3 className="title-45 text-c text-uppercase hidden-sm hidden-md">Research Experience</h3>
+                        <h3 className="title-32 text-c text-uppercase hidden-lg">Research Experience</h3>
+                        <PortfolioJobCard 
+                            description='Working on Iterative Domain-Specific Improvement of Retrieval-Augmented Generation (RAG) models and Large Language Models (LLMs). This involves, implementing a framework for automated dataset creation for domain-specific alignment of LLMs and RAG models.'
+                            companyName='Goldman Sachs' position='Graduate Student Researcher' periodLocation='January 2025 - Present, Remote'
+                            skills={[]}></PortfolioJobCard>
+                        <PortfolioJobCard 
+                            description='Currently working under Prof. David Jensen studying causal inference and devising new methods to help systems infer causal dependence from observational and experimental data. This involves performing an empirical analysis of the effect of 5 existing generative methods on rankings of causal estimators and how effective they are in replicating the true data-generating processes of 10 benchmark datasets.'
+                            companyName='Knowledge Discovery Lab' position='Graduate Student Researcher' periodLocation='September 2024 - Present, Amherst, Massachusetts, USA'
+                            skills={[]}></PortfolioJobCard>
                     </div>
 
                     <div id="work-experience" className="portfolio-main__section">
