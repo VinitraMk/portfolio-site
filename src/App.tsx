@@ -86,7 +86,7 @@ function App() {
                                   This experience reflects both strong engineering execution and stakeholder collaboration across high-impact, enterprise-scale products.
                                 </p>
                               </div>}
-                            companyName='Microsoft' position='Front-End Engineer' periodLocation='July 2019 - August 2023, Hyderabad, India'
+                            companyName='Microsoft' position='Software Engineer' periodLocation='July 2019 - August 2023, Hyderabad, India'
                             skills={['React', 'Angular', 'Vue', 'ASP.NET', 'C#', 'Typescript', 'Javascript']}></PortfolioJobCard>
                     </div>
                     <div id="publications" className="portfolio-main__section">
