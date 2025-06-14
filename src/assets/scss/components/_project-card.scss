@@ -32,21 +32,6 @@
         margin: 10px 0;
     }
 
-    &__citation{
-        @extend .poppins-regular;
-        font-size: 12px;
-        color: white;
-        margin: 5px 0;
-        display:flex;
-        justify-content: space-between;
-
-        &--venue {
-            @extend .poppins-regular-italic;
-        }
-    }
-
-    
-
     &__desc {
         min-height: pxToRem(80);
         position: relative;

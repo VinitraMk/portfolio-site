@@ -7,7 +7,7 @@
 
     &-content {
         background-image: url("/src/assets/images/background-pattern.png");
-        background-repeat: no-repeat;
+        background-repeat: repeat-y;
         //background-position: center;
         //width: pxToRem(1024);
         width: calc(100% - 20px);

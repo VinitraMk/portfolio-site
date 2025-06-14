@@ -35,7 +35,7 @@ export default function PortfolioJobCard(props: PorfolioJobProps) {
     I am well-versed in the latest web development trends and technologies.*/}
                 {props.description}
             </p>
-            <div className="d-flex flex-wrap m-b-4">
+            <div className="d-flex flex-wrap m-b-6">
                 {props.skills !== null && props.skills.length > 0 && props.skills.map((skill:string) => {
                     return (
                         <PortfolioTag title={skill}/>

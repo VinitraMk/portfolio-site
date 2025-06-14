@@ -67,7 +67,7 @@ label input[type=file] {
   font-style: normal;
 }
 
-.poppins-regular, .portfolio-project__desc-text, .portfolio-project__citation, .portfolio-job__period, .portfolio-job__title, .portfolio-tag-def__body, .portfolio-header__lname, .paragraph-12 {
+.poppins-regular, .portfolio-publication__desc-text, .portfolio-publication__citation, .portfolio-project__desc-text, .portfolio-job__period, .portfolio-job__title, .portfolio-tag-def__body, .portfolio-header__lname, .paragraph-12 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -85,7 +85,7 @@ label input[type=file] {
   font-style: normal;
 }
 
-.poppins-bold, .portfolio-project__title, .portfolio-job__company, .portfolio-navoverlay__content ul > li, .portfolio-header__fname, .title-32, .title-64, .title-45 {
+.poppins-bold, .portfolio-publication__title, .portfolio-project__title, .portfolio-job__company, .portfolio-navoverlay__content ul > li, .portfolio-header__fname, .title-32, .title-64, .title-45 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -121,7 +121,7 @@ label input[type=file] {
   font-style: italic;
 }
 
-.poppins-regular-italic, .portfolio-project__citation--venue {
+.poppins-regular-italic, .portfolio-publication__citation--venue {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: italic;
@@ -244,7 +244,7 @@ label input[type=file] {
 }
 .portfolio-main-content {
   background-image: url("/src/assets/images/background-pattern.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   width: calc(100% - 20px);
   margin: auto;
 }
@@ -441,13 +441,6 @@ label input[type=file] {
   color: white;
   margin: 10px 0;
 }
-.portfolio-project__citation {
-  font-size: 12px;
-  color: white;
-  margin: 5px 0;
-  display: flex;
-  justify-content: space-between;
-}
 .portfolio-project__desc {
   min-height: 5.7142857143rem;
   position: relative;
@@ -530,6 +523,51 @@ label input[type=file] {
   height: 21.4285714286rem;
   width: 28.5714285714rem;
   z-index: 3;
+}
+
+.portfolio-publication {
+  max-height: 15rem;
+  position: relative;
+}
+@media screen and (max-width: 1081px) {
+  .portfolio-publication {
+    height: auto;
+    max-height: none;
+  }
+}
+.portfolio-publication__content {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  background: rgba(69, 69, 71, 0.5882352941);
+  padding: 10px;
+}
+@media screen and (max-width: 1081px) {
+  .portfolio-publication__content {
+    z-index: 0;
+    width: 100%;
+  }
+}
+.portfolio-publication__title {
+  font-size: 18px;
+  color: white;
+  margin: 10px 0;
+}
+.portfolio-publication__citation {
+  font-size: 12px;
+  color: white;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio-publication__desc {
+  min-height: 5.7142857143rem;
+}
+.portfolio-publication__desc-text {
+  width: calc(100% - 20px);
+  color: white;
+  font-size: 12px;
+  padding: 12px 0;
 }
 
 .portfolio-btn-transparent {

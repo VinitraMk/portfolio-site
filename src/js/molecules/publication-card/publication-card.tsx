@@ -19,16 +19,16 @@ export default function PublicationCard(props: PublicationCardProps) {
         }
     }
     return (
-        <div className="portfolio-project m-b-12">
-            <div className="portfolio-project__content portfolio-project__content--fullw">
-                <div className="portfolio-project__title">{props.title}</div>
-                <div className="portfolio-project__citation"><span className="portfolio-project__citation--venue">{props.venue}</span> <span>{props.authors.join(", ")}</span></div>
-                <div className="portfolio-project__desc">
-                    <div className="portfolio-project__desc-text">
+        <div className="portfolio-publication m-b-12">
+            <div className="portfolio-publication__content">
+                <div className="portfolio-publication__title">{props.title}</div>
+                <div className="portfolio-publication__citation"><span className="portfolio-publication__citation--venue">{props.venue}</span> <span>{props.authors.join(", ")}</span></div>
+                <div className="portfolio-publication__desc">
+                    <div className="portfolio-publication__desc-text">
                         {props.description}
                     </div>
-                    <div className="d-flex p-x-3 p-b-3">
-                        <PortfolioTag type="project" title="Paper" onClick={handleSnapshotClick}/>
+                    <div className="d-flex">
+                        <PortfolioTag type="project" title="PDF" onClick={handleSnapshotClick}/>
                     </div>
                 </div>
             </div>
