@@ -121,7 +121,7 @@ label input[type=file] {
   font-style: italic;
 }
 
-.poppins-regular-italic, .portfolio-publication__citation--venue {
+.poppins-regular-italic, .fs, .portfolio-publication__citation--venue {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: italic;
@@ -2523,7 +2523,14 @@ label input[type=file] {
 }
 
 .fw-bold {
-  font-weight: bold;
+  font-weight: 700;
+}
+.fw-normal {
+  font-weight: normal;
+}
+
+.fs-italic {
+  font-style: italic;
 }
 
 .cursor-pointer {

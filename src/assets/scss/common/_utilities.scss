@@ -166,7 +166,17 @@
 
 .fw {
     &-bold {
-        font-weight: bold;
+        font-weight: 700;
+    }
+    &-normal { 
+        font-weight: normal;
+    }
+}
+
+.fs {
+    &-italic {
+        @extend .poppins-regular-italic;
+        font-style: italic;
     }
 }
 
