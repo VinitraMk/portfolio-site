@@ -11,6 +11,7 @@ interface PublicationCardProps {
 
 export default function PublicationCard(props: PublicationCardProps) {
 
+    const alen = props.authors.length;
     const handleSnapshotClick = () => {
         if (props.publicationPdfUrl && props.publicationPdfUrl!== '') {
             window.open(props.publicationPdfUrl, '_blank');
@@ -22,7 +23,12 @@ export default function PublicationCard(props: PublicationCardProps) {
         <div className="portfolio-publication m-b-12">
             <div className="portfolio-publication__content">
                 <div className="portfolio-publication__title">{props.title}</div>
-                <div className="portfolio-publication__citation"><span className="portfolio-publication__citation--venue">{props.venue}</span> <span>{props.authors.join(", ")}</span></div>
+                <div className="portfolio-publication__citation"><span className="portfolio-publication__citation--venue">{props.venue}</span>
+                    <span>
+                    {props.authors && props.authors.length > 0 &&
+                        props.authors.map((author, aidx) => author.startsWith("Vinitra") ?<span className="fw-bold">{author}{aidx === alen - 1 ? '' : ', '}</span>: <span>{author}{aidx === alen - 1 ? '' : ', '}</span>)}
+                    </span>
+                </div>
                 <div className="portfolio-publication__desc">
                     <div className="portfolio-publication__desc-text">
                         {props.description}
