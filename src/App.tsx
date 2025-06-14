@@ -58,7 +58,7 @@ function App() {
                         <h3 className="title-32 text-c text-uppercase hidden-lg">Work Experience</h3>
                         <PortfolioJobCard 
                             description='As part of a project with Prof. Andrew McCallum and Goldman Sachs, I am designing a benchmark dataset generation workflow for evaluating Retrieval Augmented Generation (RAG) systems on two financial question-answering tasks: single-document and multi-document QA. This work involves experimenting with two novel context-retrieval strategies and using prompt engineering techniques on large language models such as Qwen 32B and LLaMA 70B to create a high-quality dataset for reliable RAG evaluation.'
-                            companyName='Goldman Sachs' position='Graduate Researcher' periodLocation='January 2025 - Present, Remote'
+                            companyName='University of Massachusetts Amherst' position='Graduate Researcher' periodLocation='January 2025 - Present, Remote'
                             skills={["Pytorch", "vLLM", "Langchain", "RAG", "LLMs"]}></PortfolioJobCard>
                         <PortfolioJobCard 
                             description='I helped develop SBICE under the guidance of Prof. David Jensen—a simulation-based inference framework designed to infer posteriors over data-generating parameters for causal evaluation. Using SBICE, I generated three realistic synthetic datasets and tuned their parameters to achieve an AUC of approximately 0.5, demonstrating close alignment with the source data and supporting more reliable causal estimator selection.'
