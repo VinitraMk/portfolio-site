@@ -67,7 +67,7 @@ label input[type=file] {
   font-style: normal;
 }
 
-.poppins-regular, .portfolio-project__desc-text, .portfolio-job__period, .portfolio-job__title, .portfolio-tag-def__body, .portfolio-header__lname, .paragraph-12 {
+.poppins-regular, .portfolio-project__desc-text, .portfolio-project__citation, .portfolio-job__period, .portfolio-job__title, .portfolio-tag-def__body, .portfolio-header__lname, .paragraph-12 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -121,7 +121,7 @@ label input[type=file] {
   font-style: italic;
 }
 
-.poppins-regular-italic {
+.poppins-regular-italic, .portfolio-project__citation--venue {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: italic;
@@ -330,7 +330,7 @@ label input[type=file] {
   background-color: #1a1a1a;
   border-radius: 100%;
   margin: auto;
-  background-image: url("/src/assets/images/self.jpeg");
+  background-image: url("/src/assets/images/self-1.jpeg");
   background-size: cover;
 }
 
@@ -421,6 +421,15 @@ label input[type=file] {
   width: 80%;
   z-index: 2;
 }
+.portfolio-project__content--fullw {
+  width: 100%;
+}
+@media screen and (max-width: 1081px) {
+  .portfolio-project__content--fullw {
+    z-index: 0;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1081px) {
   .portfolio-project__content {
     z-index: 0;
@@ -431,6 +440,13 @@ label input[type=file] {
   font-size: 18px;
   color: white;
   margin: 10px 0;
+}
+.portfolio-project__citation {
+  font-size: 12px;
+  color: white;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
 }
 .portfolio-project__desc {
   min-height: 5.7142857143rem;
@@ -481,6 +497,14 @@ label input[type=file] {
 @media screen and (min-width: 1080px) {
   .portfolio-project__snapshot-image {
     object-fit: fill;
+  }
+}
+.portfolio-project__snapshot-image--orig {
+  object-fit: scale-down;
+}
+@media screen and (min-width: 1080px) {
+  .portfolio-project__snapshot-image--orig {
+    object-fit: scale-down;
   }
 }
 .portfolio-project__snapshot:hover {

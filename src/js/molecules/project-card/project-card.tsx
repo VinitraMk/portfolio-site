@@ -6,7 +6,8 @@ interface PortfolioProjectCardProps {
     description: string | React.ReactElement;
     githubRepoUrl?: string | null;
     projectSiteUrl?: string | null;
-    snapshotSrc: string;
+    snapshotSrc?: string;
+    snapshotSize: "fill" | "orig";
 }
 
 export default function PortfolioProjectCard(props: PortfolioProjectCardProps) {
@@ -21,20 +22,21 @@ export default function PortfolioProjectCard(props: PortfolioProjectCardProps) {
         }
     }
     return (
-        <div className="portfolio-project m-b-8">
+        <div className="portfolio-project m-b-10">
             <div className="portfolio-project__content">
                 <div className="portfolio-project__title">{props.title}</div>
                 <div className="portfolio-project__desc">
                     <div className="portfolio-project__desc-text">
                         {props.description}
                     </div>
-                    <div className="d-flex p-x-3 p-b-3">
+                    {props.githubRepoUrl && props.githubRepoUrl !== '' && <div className="d-flex p-x-3 p-b-3">
                         <PortfolioTag type="project" title="Github Repo" onClick={handleSnapshotClick}/>
-                    </div>
+                    </div>}
                 </div>
             </div>
             <div className="portfolio-project__snapshot">
-                <img className="portfolio-project__snapshot-image" src={props.snapshotSrc}/>
+                <img className={`portfolio-project__snapshot-image ${props.snapshotSize === "orig" ? 'portfolio-project__snapshot-image--orig' : '' }`}
+                src={props.snapshotSrc}/>
                 {/*<div className="portfolio-project__snapshot-overlay"></div>->*/}
             </div>
         </div>
