@@ -49,7 +49,7 @@ function App() {
                         <h3 className="title-45 text-c text-uppercase hidden-sm hidden-md">Research Interests</h3>
                         <h3 className="title-32 text-c text-uppercase hidden-lg">Research Interests</h3>
                         <p className="paragraph-16 text-c">
-                            With ongoing empirical research in machine learning at UMass Amherst and prior experience in app development at Microsoft, my work spans both methodological inquiry and practical deployment of ML systems. I’ve contributed to projects involving LLM-based agentic systems for telemetry analysis and evaluation frameworks for retrieval-augmented generation (RAG) in collaboration with Prof. Andrew McCallum and Goldman Sachs. I also helped develop SBICE, a simulation-based inference framework for causal benchmarking under Prof. David Jensen. My primary research interest lies in self-supervised and weakly-supervised learning methods, particularly for solving ML tasks in low-data regimes. This has led me to explore a range of computer vision problems, including fine-grained classification, object detection, segmentation, and human motion synthesis. Looking ahead, I plan to extend this work into audio synthesis and recommendation systems, continuing to explore underconstrained domains where data efficiency and generalization are critical.
+                            With ongoing empirical research in machine learning at UMass Amherst and prior experience in full-stack engineering at Microsoft, my work spans both methodological inquiry and practical deployment of ML systems. I’ve contributed to projects involving LLM-based agentic systems for telemetry analysis and evaluation frameworks for retrieval-augmented generation (RAG) in collaboration with Prof. Andrew McCallum and Goldman Sachs. I also helped develop SBICE, a simulation-based inference framework for causal benchmarking under Prof. David Jensen. My primary research interest lies in self-supervised and weakly-supervised learning methods, particularly for solving ML tasks in low-data regimes. This has led me to explore a range of computer vision problems, including fine-grained classification, object detection, segmentation, and human motion synthesis. Looking ahead, I plan to extend this work into audio synthesis and recommendation systems, continuing to explore underconstrained domains where data efficiency and generalization are critical.
                         </p>
                     </div>
 
@@ -57,36 +57,32 @@ function App() {
                         <h3 className="title-45 text-c text-uppercase hidden-sm hidden-md">Work Experience</h3>
                         <h3 className="title-32 text-c text-uppercase hidden-lg">Work Experience</h3>
                         <PortfolioJobCard 
-                            description='As part of a project with Prof. Andrew McCallum and Goldman Sachs, I am designing a benchmark dataset generation workflow for evaluating Retrieval Augmented Generation (RAG) systems on two financial question-answering tasks: single-document and multi-document QA. This work involves experimenting with two novel context-retrieval strategies and using prompt engineering techniques on large language models such as Qwen 32B and LLaMA 70B to create a high-quality dataset for reliable RAG evaluation.'
-                            companyName='University of Massachusetts Amherst' position='Graduate Researcher' periodLocation='January 2025 - Present, Remote'
+                            description='Designed and implemented a fully automated benchmark dataset generation pipeline for evaluating retrieval-augmented generation (RAG) systems in financial question answering, as part of a collaboration with Goldman Sachs and Prof. Andrew McCallum at UMass Amherst. Led the end-to-end process from SEC 10-K document preprocessing and salient entity detection to high-variance question generation using prompt-engineered LLMs. Incorporated LLM-as-a-judge (using Gemini) for answer quality control and conducted rigorous RAG benchmarking using GPT-4 and LLaMA-70B. The resulting datasets support multi-hop, multi-document QA and enable robust, model-agnostic evaluation of domain-specific LLM pipelines.'
+                            companyName='UMass Amherst - Goldman Sachs' position='Graduate Researcher' periodLocation='January 2025 - Present, Remote'
                             skills={["Pytorch", "vLLM", "Langchain", "RAG", "LLMs"]}></PortfolioJobCard>
                         <PortfolioJobCard 
-                            description='I helped develop SBICE under the guidance of Prof. David Jensen—a simulation-based inference framework designed to infer posteriors over data-generating parameters for causal evaluation. Using SBICE, I generated three realistic synthetic datasets and tuned their parameters to achieve an AUC of approximately 0.5, demonstrating close alignment with the source data and supporting more reliable causal estimator selection.'
+                            description='I helped develop SBICE under the guidance of Prof. David Jensen—a simulation-based inference framework under Prof. David Jensen, designed to generate realistic, data-consistent synthetic datasets for evaluating causal estimators. SBICE addresses the challenge of arbitrary hand-tuned data-generating processes by using likelihood-free inference (SMC-ABC) to infer plausible generative model configurations from real-world observational data. These inferred parameters are then used with flexible generative models (e.g., Frugal Flows) to create synthetic datasets that preserve the structural properties of the source data, enabling principled, uncertainty-aware benchmarking of causal inference methods. The work is currently under review at NeurIPS 2025.'
                             companyName='Knowledge Discovery Lab' position='Graduate Researcher' periodLocation='September 2024 - May 2025, Amherst, Massachusetts, USA'
                             skills={["Pytorch", "Pytorch Lightning", "Ray", "Bayesian Inference", "Causal Inference"]}></PortfolioJobCard>
                         <PortfolioJobCard 
                             description={<div>
                                 <p>
-                                  As a <strong>Lead Front-End Developer</strong> at Microsoft India’s Azure Cloud and AI UX team, I built scalable user interfaces across platforms for enterprise clients such as <strong>Ford</strong>, <strong>Outokumpu</strong>, the <strong>Monetary Authority of Singapore</strong>, and <strong>Petronas</strong>. I specialized in modern frontend stacks—<code>React</code>, <code>Redux</code>, <code>Angular</code>, <code>Vue</code>—with backend integrations via the <code>.NET</code> framework. Key projects include:
+                                  As a <strong>Full-Stack Engineer</strong> at Microsoft India’s Azure Cloud and AI UX team, I built scalable user interfaces across platforms for enterprise clients such as <strong>Ford</strong>, <strong>Outokumpu</strong>, the <strong>Monetary Authority of Singapore</strong>, and <strong>Petronas</strong>. I specialized in modern frontend stacks—<code>React</code>, <code>Redux</code>, <code>Angular</code>, <code>Vue</code>—with backend integrations via the <code>.NET</code> framework. Key projects include:
                                 </p>
                           
                                 <ul>
                                   <li>
-                                    <strong>ASIS (Outokumpu):</strong> Built web solutions to support steel defect detection using ML, with real-time data updates via <code>SignalR</code> and rich visualizations using <code>Chart.js</code>.
+                                    <strong>ASIS (Outokumpu):</strong> Delivered a full-stack web dashboard for steel-defect detection using <code>React/Redux</code> and <code>ASP.NET</code>. Implemented <code>SignalR</code> and <code>Azure Redis Cache</code> for real-time telemetry and faster page loads, with <code>Chart.js</code> visualizations for quality analytics.
                                   </li>
                                   <li>
-                                    <strong>SFF x SWITCH (Monetary Authority of Singapore):</strong> Engineered a <code>React</code>-based virtual event platform capable of hosting 1M+ users, with <code>Teams</code> integration and rigorous performance testing.
+                                    <strong>SFF x SWITCH (Monetary Authority of Singapore):</strong> Built and optimized a <code>React</code>-based event platform with Microsoft Teams integration; used Lighthouse and A/B testing to eliminate performance bottlenecks, enabling smooth, large-scale virtual conferences.
                                   </li>
                                   <li>
                                     <strong>Ford UI Library:</strong> Led the creation of a Ford-branded <code>Material UI</code>-based component library, ensuring responsive design, accessibility, and cross-browser/device compatibility.
                                   </li>
                                 </ul>
-                          
-                                <p>
-                                  This experience reflects both strong engineering execution and stakeholder collaboration across high-impact, enterprise-scale products.
-                                </p>
                               </div>}
-                            companyName='Microsoft' position='Software Engineer' periodLocation='July 2019 - August 2023, Hyderabad, India'
+                            companyName='Microsoft' position='Full-Stack Engineer' periodLocation='July 2019 - August 2023, Hyderabad, India'
                             skills={['React', 'Angular', 'Vue', 'ASP.NET', 'C#', 'Typescript', 'Javascript']}></PortfolioJobCard>
                     </div>
                     <div id="publications" className="portfolio-main__section">
