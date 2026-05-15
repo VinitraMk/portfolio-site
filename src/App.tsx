@@ -10,6 +10,7 @@ import PortfolioProjectCard from './js/molecules/project-card/project-card';
 import colorizationProjectSrc from './assets/images/project-snapshots/colorization-project.png';
 import cosProjectSrc from './assets/images/project-snapshots/cos-project.png';
 import motionSynthesisProjectSrc from './assets/images/project-snapshots/motion-synthesis-project.gif';
+import motionEditingProjectSrc from './assets/images/project-snapshots/motion-editing-project.gif';
 import daapProjectSrc from './assets/images/project-snapshots/daap-project.png';
 import sbiceProjectSrc from './assets/images/project-snapshots/sbice-project.png';
 import agenticChatbotProjectSrc from './assets/images/project-snapshots/agentic-chatbot.gif';
@@ -49,16 +50,24 @@ function App() {
                         <h3 className="title-45 text-c text-uppercase hidden-sm hidden-md">Research Interests</h3>
                         <h3 className="title-32 text-c text-uppercase hidden-lg">Research Interests</h3>
                         <p className="paragraph-16 text-c">
-                            With ongoing empirical research in machine learning at UMass Amherst and prior experience in full-stack engineering at Microsoft, my work spans both methodological inquiry and practical deployment of ML systems. I’ve contributed to projects involving LLM-based agentic systems for telemetry analysis and evaluation frameworks for retrieval-augmented generation (RAG) in collaboration with Prof. Andrew McCallum and Goldman Sachs. I also helped develop SBICE, a simulation-based inference framework for causal benchmarking under Prof. David Jensen. My primary research interest lies in self-supervised and weakly-supervised learning methods, particularly for solving ML tasks in low-data regimes. This has led me to explore a range of computer vision problems, including fine-grained classification, object detection, segmentation, and human motion synthesis. Looking ahead, I plan to extend this work into audio synthesis and recommendation systems, continuing to explore underconstrained domains where data efficiency and generalization are critical.
+                            I am currently a Machine Learning Engineer on the Model Factory team at d-Matrix, where I develop compiler tools to lower PyTorch models onto d-Matrix’s proprietary AI hardware accelerators.
+                            <br/>
+                            I co-authored SBICE, a simulation-based inference framework for causal benchmarking under Prof. David Jensen, which has been accepted at CLeaR 2026. I also collaborated with Prof. Andrew McCallum and Goldman Sachs, to develop evaluation frameworks for retrieval-augmented generation (RAG), focusing on robust, task-grounded assessment of LLM-based systems.
+                            <br/>
+                            Prior to this, my empirical research in machine learning at UMass Amherst and my full-stack engineering experience at Microsoft have allowed me to bridge methodological inquiry with practical deployment. My primary research interests lie in self-supervised and weakly supervised learning methods, particularly for solving ML tasks in low-data regimes. My current focus is on generative problems related to 3D content such as human motion or shapes.
+                            <br/>
                         </p>
                     </div>
 
                     <div id="work-experience" className="portfolio-main__section">
                         <h3 className="title-45 text-c text-uppercase hidden-sm hidden-md">Work Experience</h3>
                         <h3 className="title-32 text-c text-uppercase hidden-lg">Work Experience</h3>
+                        <PortfolioJobCard description="As part of the compiler team, I develop compiler tools to lower PyTorch models onto d-Matrix's proprietary hardware accelerator. This includes implementing and testing tensor and pipeline model parallelism, designing quantization configurations, running calibration and benchmark evaluations, and extending the framework to support new model architectures."
+                            companyName='d-Matrix Corporation' position='Machine Learning Engineer' periodLocation='September 2025 - Present, Remote'
+                            skills={["Pytorch", "Python", "MLIR", "LLMs"]}></PortfolioJobCard>
                         <PortfolioJobCard 
                             description='Designed and implemented a fully automated benchmark dataset generation pipeline for evaluating retrieval-augmented generation (RAG) systems in financial question answering, as part of a collaboration with Goldman Sachs and Prof. Andrew McCallum at UMass Amherst. Led the end-to-end process from SEC 10-K document preprocessing and salient entity detection to high-variance question generation using prompt-engineered LLMs. Incorporated LLM-as-a-judge (using Gemini) for answer quality control and conducted rigorous RAG benchmarking using GPT-4 and LLaMA-70B. The resulting datasets support multi-hop, multi-document QA and enable robust, model-agnostic evaluation of domain-specific LLM pipelines.'
-                            companyName='UMass Amherst - Goldman Sachs' position='Graduate Researcher' periodLocation='January 2025 - Present, Remote'
+                            companyName='UMass Amherst - Goldman Sachs' position='Graduate Researcher' periodLocation='January 2025 - August 2025, Remote'
                             skills={["Pytorch", "vLLM", "Langchain", "RAG", "LLMs"]}></PortfolioJobCard>
                         <PortfolioJobCard 
                             description='I helped develop SBICE under the guidance of Prof. David Jensen—a simulation-based inference framework under Prof. David Jensen, designed to generate realistic, data-consistent synthetic datasets for evaluating causal estimators. SBICE addresses the challenge of arbitrary hand-tuned data-generating processes by using likelihood-free inference (SMC-ABC) to infer plausible generative model configurations from real-world observational data. These inferred parameters are then used with flexible generative models (e.g., Frugal Flows) to create synthetic datasets that preserve the structural properties of the source data, enabling principled, uncertainty-aware benchmarking of causal inference methods. The work is currently under review at NeurIPS 2025.'
@@ -88,6 +97,11 @@ function App() {
                     <div id="publications" className="portfolio-main__section">
                         <h3 className="title-45 text-c text-uppercase hidden-sm hidden-md">Publications</h3>
                         <h3 className="title-32 text-c text-uppercase hidden-lg">Publications</h3>
+                        <PublicationCard title="Improving Generative Methods for Causal Evaluation via Simulation-Based Inference"
+                            authors={["Pracheta Amaranath", "Vinitra Muralikrishnan", "Amit Sharma", "David Jensen"]}
+                            venue="Proceedings of the Causal Learning and Reasoning"
+                            description="Simulation-based Inference for Causal Evaluation (SBICE) addresses the challenge of generating synthetic datasets that both resemble real-world observational data and vary key causal parameters (treatment effects, confounding) for benchmarking estimators. Instead of requiring fixed, hand-chosen generative models and parameter values, SBICE treats both as uncertain and infers their posterior distributions from a source dataset using simulation-based inference. This yields realistic synthetic datasets whose causal estimates align with those of the source data, improving the robustness and reliability of causal estimator evaluation."
+                            publicationPdfUrl={"https://arxiv.org/pdf/2509.02892"}/>
                         <PublicationCard title="Exploring Human Motion Synthesis with Latent-Space GANs"
                             authors={["Avinash Amballa", "Gayathri Akkinapalli", "Vinitra Muralikrishnan"]}
                             venue="Proceedings of the Winter Conference on Applications of Computer Vision"
@@ -97,14 +111,46 @@ function App() {
                     <div id="projects" className="portfolio-main__section">
                         <h3 className="title-45 text-c text-uppercase hidden-sm hidden-md">Projects</h3>
                         <h3 className="title-32 text-c text-uppercase hidden-lg">Projects</h3>
-                        <PortfolioProjectCard title="Improving Generative Methods for Causal Evaluation via Simulation-Based Inference"
+                        {/*<PortfolioProjectCard title="Improving Generative Methods for Causal Evaluation via Simulation-Based Inference"
                             snapshotSize='orig'
                             description='Simulation-Based Inference for Causal Evaluation (SBICE) is a framework for generating synthetic datasets that
                             closely resemble real-world observational data while incorporating uncertainty in key generative parameters such as treatment effect
                             and confounding. Unlike prior methods that rely on fixed, user-specified values, SBICE uses simulation-based inference to infer
                             posterior distributions over these parameters from a source dataset. This approach enables realistic, data-consistent evaluation of causal estimators under
                             uncertainty. (Under review at NeurIPS 2025).'
-                            snapshotSrc={sbiceProjectSrc}/>
+                            snapshotSrc={sbiceProjectSrc}/>*/}
+                        <PortfolioProjectCard title="Part-aware Motion Editing"
+                            snapshotSize='fill'
+                            description='This project explores part-based text-to-motion editing by learning structured latent representations of human motion and using masked generation to modify only selected body regions.
+                            The current work includes a pretrained VAE benchmark and an experimental part-based VQ-VAE, with the next stage focused on diffusion-based latent editing for more controllable motion synthesis.'
+                            snapshotSrc={motionEditingProjectSrc}
+                            githubRepoUrl="https://github.com/VinitraMk/motion-synthesis"/>
+                        {/*<PortfolioProjectCard title="Exploring Human Motion Synthesis with Latent-Space GANs"
+                            snapshotSize='fill'
+                            description='This project introduces a novel framework for human motion synthesis conditioned on text
+                            inputs, leveraging Generative Adversarial Networks (GANs) in the latent space. By optimizing for faster
+                            training and inference, it achieves efficient and high-quality results, with experiments on the HumanML3D
+                            benchmark demonstrating an FID of 2.39 and a diversity score of 8.92. The work explores the potential of simpler
+                            architectures, incorporating elements from StyleGAN and VAE models, to enhance performance in low-resource settings.'
+                            snapshotSrc={motionSynthesisProjectSrc}
+                            githubRepoUrl="https://github.com/VinitraMk/UMass-CS674-Project"/>*/}
+                        <PortfolioProjectCard title="Enhancing Camouflaged Object Segmentation in Limited Data Setting"
+                            snapshotSize='fill'
+                            description='This project addresses the challenge of detecting camouflaged objects, which blend so seamlessly with their environment that they are difficult
+                            to detect even by humans. Our proposed solution leverages two distinct data augmentation techniques — style transfer and data synthesis using Stable Diffusion -
+                            to enhance the training dataset and improve the IoU score. Through style transfer, we apply natural textures to existing training images, enriching the dataset,
+                            while Stable Diffusion is employed to generate entirely new, realistic images from text prompts. Our approach outperforms the benchmark Camouflaged Object Detection model,
+                            SINet, and includes a comparative analysis with SAM.'
+                            snapshotSrc={cosProjectSrc}
+                            githubRepoUrl="https://github.com/VinitraMk/UMass-CS670-Project"/>
+                        <PortfolioProjectCard title="Defence against Adversarial Patches"
+                            snapshotSize='fill'
+                            description='This project tackles the challenge of defending deep neural networks against adversarial patches designed
+                            to manipulate model predictions. Various defense techniques were explored using attack patches of different shapes (square, circle, star),
+                            reducing the misclassification error from 67% to 13%. The approach generalizes across different attack types and demonstrates robustness to non-adversarial,
+                            patch-like objects, offering insights into improving model security in real-world applications.'
+                            snapshotSrc={daapProjectSrc}
+                            githubRepoUrl="https://github.com/VinitraMk/682-Project-DAAP"/>
                         <PortfolioProjectCard title="UAV Log Viewer - Agentic Chatbot"
                             snapshotSize='orig'
                             description='As part of a volunteer initiative with Arena, I developed an agentic chatbot to interpret and analyze UAV telemetry logs
@@ -116,32 +162,6 @@ function App() {
                             high-dimensional, structured domains like UAV telemetry.'
                             snapshotSrc={agenticChatbotProjectSrc}
                             githubRepoUrl="https://github.com/VinitraMk/UAVLogViewer/tree/dev/vinitra"/>
-                        <PortfolioProjectCard title="Enhancing Camouflaged Object Segmentation in Limited Data Setting"
-                            snapshotSize='fill'
-                            description='This project addresses the challenge of detecting camouflaged objects, which blend so seamlessly with their environment that they are difficult
-                            to detect even by humans. Our proposed solution leverages two distinct data augmentation techniques — style transfer and data synthesis using Stable Diffusion -
-                            to enhance the training dataset and improve the IoU score. Through style transfer, we apply natural textures to existing training images, enriching the dataset,
-                            while Stable Diffusion is employed to generate entirely new, realistic images from text prompts. Our approach outperforms the benchmark Camouflaged Object Detection model,
-                            SINet, and includes a comparative analysis with SAM.'
-                            snapshotSrc={cosProjectSrc}
-                            githubRepoUrl="https://github.com/VinitraMk/UMass-CS670-Project"/>
-                        <PortfolioProjectCard title="Exploring Human Motion Synthesis with Latent-Space GANs"
-                            snapshotSize='fill'
-                            description='This project introduces a novel framework for human motion synthesis conditioned on text
-                            inputs, leveraging Generative Adversarial Networks (GANs) in the latent space. By optimizing for faster
-                            training and inference, it achieves efficient and high-quality results, with experiments on the HumanML3D
-                            benchmark demonstrating an FID of 2.39 and a diversity score of 8.92. The work explores the potential of simpler
-                            architectures, incorporating elements from StyleGAN and VAE models, to enhance performance in low-resource settings.'
-                            snapshotSrc={motionSynthesisProjectSrc}
-                            githubRepoUrl="https://github.com/VinitraMk/UMass-CS674-Project"/>
-                        <PortfolioProjectCard title="Defence against Adversarial Patches"
-                            snapshotSize='fill'
-                            description='This project tackles the challenge of defending deep neural networks against adversarial patches designed
-                            to manipulate model predictions. Various defense techniques were explored using attack patches of different shapes (square, circle, star),
-                            reducing the misclassification error from 67% to 13%. The approach generalizes across different attack types and demonstrates robustness to non-adversarial,
-                            patch-like objects, offering insights into improving model security in real-world applications.'
-                            snapshotSrc={daapProjectSrc}
-                            githubRepoUrl="https://github.com/VinitraMk/682-Project-DAAP"/>
                         {/* 
                         <PortfolioProjectCard title='Image Colorization'
                             description='In this project I attempt to colorize grayscale images. This project is a continuation of a course assignment at UMass, CS689.
