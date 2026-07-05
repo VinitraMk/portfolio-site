@@ -26,7 +26,7 @@ function App() {
                         <div className="portfolio-dp"></div>
                         <div className="text-c m-t-6">
                             <PortfolioSocialMedia type='google-scholar' link='https://scholar.google.com/citations?user=N_Xv6FUAAAAJ&hl=en' className='m-r-3'/>
-                            <PortfolioSocialMedia type='email' link='mailto:vinitramk@gmail.com' className='m-r-3'/>
+                            <PortfolioSocialMedia type='email' link='mailto:vinitramk497@gmail.com' className='m-r-3'/>
                             <PortfolioSocialMedia type='linkedin' className='m-r-3' link='https://www.linkedin.com/in/vinitramk'/>
                             <PortfolioSocialMedia type='github' link='https://github.com/VinitraMk'/>
                         </div>
