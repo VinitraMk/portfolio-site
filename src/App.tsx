@@ -9,7 +9,7 @@ import PortfolioSocialMedia from './js/atoms/icons/social-media';
 import PortfolioProjectCard from './js/molecules/project-card/project-card';
 import colorizationProjectSrc from './assets/images/project-snapshots/colorization-project.png';
 import cosProjectSrc from './assets/images/project-snapshots/cos-project.png';
-import motionSynthesisProjectSrc from './assets/images/project-snapshots/motion-synthesis-project.gif';
+import motionSynthesisProjectSrc from './assets/images/project-snapshots/motion-synthesis-project-new.gif';
 import motionEditingProjectSrc from './assets/images/project-snapshots/motion-editing-project.gif';
 import daapProjectSrc from './assets/images/project-snapshots/daap-project.png';
 import sbiceProjectSrc from './assets/images/project-snapshots/sbice-project.png';
@@ -119,11 +119,10 @@ function App() {
                             posterior distributions over these parameters from a source dataset. This approach enables realistic, data-consistent evaluation of causal estimators under
                             uncertainty. (Under review at NeurIPS 2025).'
                             snapshotSrc={sbiceProjectSrc}/>*/}
-                        <PortfolioProjectCard title="Part-aware Motion Editing"
+                        <PortfolioProjectCard title="Motion Synthesis using Shortcut Diffusion"
                             snapshotSize='fill'
-                            description='This project explores part-based text-to-motion editing by learning structured latent representations of human motion and using masked generation to modify only selected body regions.
-                            The current work includes a pretrained VAE benchmark and an experimental part-based VQ-VAE, with the next stage focused on diffusion-based latent editing for more controllable motion synthesis.'
-                            snapshotSrc={motionEditingProjectSrc}
+                            description='This project explores whether a shortcut diffusion model can significantly speeds up inference for text-conditioned motion generation, while maintaining the motion quality of a diffusion-based baseline.'
+                            snapshotSrc={motionSynthesisProjectSrc}
                             githubRepoUrl="https://github.com/VinitraMk/motion-synthesis"/>
                         {/*<PortfolioProjectCard title="Exploring Human Motion Synthesis with Latent-Space GANs"
                             snapshotSize='fill'
